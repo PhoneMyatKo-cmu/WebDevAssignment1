@@ -1,0 +1,199 @@
+ .button-animate{
+    transition: transform 2s;
+ }
+
+ .button-animate:hover{
+    transform: rotate(180deg);
+    }
+
+    /* Change font for navbar-brand */
+.navbar-brand{
+
+}
+.nav-item{
+   transition: 0.5s;
+}
+.nav-item:hover{
+   color: black;
+   background-color: aliceblue;
+}
+.nav-link.active:hover{
+   color:black !important;
+}
+.nav-link:hover{
+   color: black;
+}
+
+.nav-link img{
+   width: 30px;
+}
+
+.header{
+   font-family: monospace,'Courier New', Courier;
+   font-weight: 60;
+   font-size: 20px;
+   padding: 3%;
+   padding-bottom: 1%;
+}
+.role-title{
+   font-weight: 400;
+   font-size: 40px;
+}
+ 
+.social-links{
+   display: flex;
+   justify-content: end;
+   align-items: end;
+   gap: 10px;
+}
+
+.link img{
+   width:20px ;
+}
+
+/* .main{
+   background-color: rgb(5, 26, 50);
+   color: white;
+} */
+.main > .row{
+   margin: 1% 0;
+   
+}
+.personal-details>div{
+ 
+   margin-bottom: 5%;
+}
+.profile-img{
+   margin: auto;
+}
+
+.profile-img>img{
+   width: 70%;
+   aspect-ratio: 1 / 1;
+   display: block;
+   margin: auto;
+   border-radius: 50%;
+   
+}
+.profile-table{
+   padding: 0 !important;
+}
+
+.profile-row{
+   display: flex;
+   justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid black;
+
+}
+
+.profile-row:nth-of-type(3){
+   border-bottom: 2px solid black;
+}
+
+
+.h2{
+   text-align: end;
+}
+.hr-thin-dark > hr{
+   height: 2px;
+   background-color: black;
+   opacity: 1;
+   margin: 3px 0;
+}
+.hr-dark > hr{
+   height: 5px;
+   background-color: black;
+   border: none;
+   opacity: 1;
+   margin: 3px 0;
+
+}
+
+.exp > div{
+   margin: 2% 0;
+}
+.exp-container{
+   display: flex;
+   justify-content: space-between;
+}
+
+.school > div,.skillset > div  {
+   margin: 3% 0;
+   
+}
+
+.school-info,.skill-desp{
+   display: flex;
+   justify-content: space-between;
+}
+
+.school-date{
+   border: 1px solid black;
+   font-size: small;
+   font-weight:bolder;
+   padding: 0 10px;
+}
+
+.prize > div {
+   margin: 2% 0;
+}
+
+.prize-type{
+   display: flex;
+   gap: 10px;
+}
+.prize-type-name{
+   /* font-weight: bold;
+   font-size: 20px; */
+}
+.prize-count {
+   color:white;
+   background-color: black;
+   padding:0 20px;
+   font-size: smaller;
+
+}
+
+.prize-instance{
+   display: flex;
+   justify-content: space-between;
+}
+.portfolio-heading{
+   margin: 4% 0;
+   text-align: center;
+   font-family: monospace;
+   font-weight: bolder;
+   font-size: 30px;
+}
+  /* Custom Styling for One-Sided Carousel */
+        /* .carousel { */
+            /* max-width: 600px; Adjust the width
+            margin-left: 0; Align to the left */
+        /* } */
+        /* .carousel-inner { */
+            /* overflow: hidden; Hide overflowing images */
+        /* } */
+        /* .carousel-item img { */
+            /* width: 100%; */
+            /* transform: translateX(100%); Start from the right */
+            /* transition: transform 0.8s ease-in-out; */
+        /* } */
+        /* .carousel-item.active img { */
+            /* transform: translateX(0); Move to position */
+        /* } */
+
+
+.footer{
+   padding: 15px;
+}
+.footer-note{
+   text-align: center;
+}
+
+.footer-dark{
+   background-color: black;
+   color: white;
+}
