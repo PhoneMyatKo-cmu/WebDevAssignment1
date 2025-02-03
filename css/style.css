@@ -46,7 +46,13 @@
    align-items: end;
    gap: 10px;
 }
-
+@media  screen and (max-width:576px) {
+   .social-links{
+      margin-top: 25px;
+      justify-content: start;
+   }
+   
+}
 .link img{
    width:20px ;
 }
