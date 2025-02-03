@@ -88,9 +88,14 @@
 }  
 }
 
-.personal-details>div{
+.personal-details>div, .profile-hide > div{
  
    margin-bottom: 5%;
+}
+
+.profile-hide{
+   opacity: 0;
+   transition: opacity 0.5s;
 }
 .profile-img{
    margin: auto;
