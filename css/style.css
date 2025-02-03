@@ -207,6 +207,10 @@
    display: flex;
    justify-content: space-between;
 }
+.top-portfolio{
+   opacity: 0;
+   transition: opacity 1s;
+}
 .portfolio-heading{
    margin: 4% 0;
    text-align: center;

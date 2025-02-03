@@ -35,13 +35,14 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        appear(document.querySelector(".portfolio", 0, 10, 100)); // Add class when in viewport
+        //appear(document.querySelector(".portfolio", 0, 10, 100)); // Add class when in viewport
+        document.querySelector(".top-portfolio").style.opacity = "100%";
       } else {
-        appear(document.querySelector(".portfolio", 0, -10, 100)); // Remove class when out of viewport
+        //appear(document.querySelector(".portfolio", 0, -10, 100)); // Remove class when out of viewport
       }
     });
   },
-  { threshold: 0.1 }
+  { threshold: 0.2 }
 ); // 50% of the element should be visible
 
 // Observe the target element
