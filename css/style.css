@@ -78,6 +78,16 @@
    font-family: monospace;
    
 }
+
+@media screen and (min-width:1000px) {
+ .personal-details-absolute{
+   position: relative;
+   left: 35%;
+   transition: left 0.5s;
+
+}  
+}
+
 .personal-details>div{
  
    margin-bottom: 5%;
