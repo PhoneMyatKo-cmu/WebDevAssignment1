@@ -131,12 +131,13 @@
 
 }
 .background{
- height: 0;
- overflow: hidden;  
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 2s;
 }
 
 .background.show{
-   height: auto;
+   max-height: 1500px;
 }
 .exp > div{
    margin: 2% 0;

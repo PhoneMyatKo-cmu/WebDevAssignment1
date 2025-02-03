@@ -56,5 +56,6 @@ typed = new Typed("#element", {
   loop: false,
   onComplete: (self) => {
     document.querySelector(".typed-cursor").style.display = "none";
+    document.querySelector(".background").classList.add("show");
   },
 });
