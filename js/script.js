@@ -46,3 +46,15 @@ const observer = new IntersectionObserver(
 
 // Observe the target element
 observer.observe(targetElement);
+const introString =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ab aut," +
+  "natus molestias et asperiores quidem autem quisquam culpa modi amet optio dolorem quis omnis alias" +
+  "sint quasi sit expedita.";
+typed = new Typed("#element", {
+  strings: [introString.trim()],
+  typeSpeed: 10,
+  loop: false,
+  onComplete: (self) => {
+    document.querySelector(".typed-cursor").style.display = "none";
+  },
+});
