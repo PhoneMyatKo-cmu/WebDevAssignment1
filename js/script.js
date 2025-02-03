@@ -56,7 +56,22 @@ typed = new Typed("#element", {
   loop: false,
   onComplete: (self) => {
     document.querySelector(".typed-cursor").style.display = "none";
-    document.querySelector(".background").classList.add("show");
-    document.querySelector(".personal-details").style.left = "0";
   },
+});
+const seeMoreBtn = document.querySelector(".see-more-btn");
+seeMoreBtn.addEventListener("click", (e) => {
+  document.querySelector(".background").classList.add("show");
+  document.querySelector(".personal-details").style.left = "0";
+  //seeMoreBtn.style.display = "none";
+  document.querySelector(".see-more").style.display = "none";
+  document.querySelector(".see-less-btn").style.display = "block";
+});
+const seeLessBtn = document.querySelector(".see-less-btn");
+seeLessBtn.addEventListener("click", (e) => {
+  document.querySelector(".background").classList.toggle("show");
+  setTimeout(() => {
+    document.querySelector(".personal-details").style.left = "35%";
+  }, 900);
+  seeLessBtn.style.display = "none";
+  seeMoreBtn.parentElement.style.display = "block";
 });

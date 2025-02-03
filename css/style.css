@@ -122,6 +122,10 @@
    border-bottom: 2px solid black;
 }
 
+.see-less-btn{
+   display: none;
+}
+
 
 .h2{
    text-align: end;
