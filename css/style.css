@@ -129,7 +129,14 @@
    margin: 3px 0;
 
 }
+.background{
+ height: 0;
+ overflow: hidden;  
+}
 
+.background.show{
+   height: auto;
+}
 .exp > div{
    margin: 2% 0;
 }
