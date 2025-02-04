@@ -1,3 +1,7 @@
+ /* To make columns collapsing smoothly */
+ div{
+   transition: all 0.3s;
+ }
  .button-animate{
     transition: transform 2s;
  }
@@ -45,6 +49,8 @@
    justify-content: end;
    align-items: end;
    gap: 10px;
+   /* Discard transition effects from overall div */
+   transition: none;
 }
 
 .link img{
