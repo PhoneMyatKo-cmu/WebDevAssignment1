@@ -72,9 +72,24 @@
    font-family: monospace;
    
 }
-.personal-details>div{
+
+@media screen and (min-width:1000px) {
+ .personal-details-absolute{
+   position: relative;
+   left: 35%;
+   transition: left 0.5s;
+
+}  
+}
+
+.personal-details>div, .profile-hide > div{
  
    margin-bottom: 5%;
+}
+
+.profile-hide{
+   opacity: 0;
+   transition: opacity 0.5s;
 }
 .profile-img{
    margin: auto;
@@ -107,6 +122,10 @@
    border-bottom: 2px solid black;
 }
 
+.see-less-btn{
+   display: none;
+}
+
 
 .h2{
    text-align: end;
@@ -125,7 +144,15 @@
    margin: 3px 0;
 
 }
+.background{
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 2s;
+}
 
+.background.show{
+   max-height: 1500px;
+}
 .exp > div{
    margin: 2% 0;
 }
@@ -174,6 +201,10 @@
 .prize-instance{
    display: flex;
    justify-content: space-between;
+}
+.top-portfolio{
+   opacity: 0;
+   transition: opacity 1s;
 }
 .portfolio-heading{
    margin: 4% 0;
