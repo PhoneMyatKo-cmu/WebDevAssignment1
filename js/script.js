@@ -88,3 +88,20 @@ seeLessBtn.addEventListener("click", (e) => {
   seeLessBtn.style.display = "none";
   seeMoreBtn.parentElement.style.display = "block";
 });
+
+// For scroll up btn
+const scrollBtn = document.querySelector(".scroll-up");
+// Button will appear when 30% scroll down and disappear else
+window.onscroll = () => {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    document.querySelector(".top-scroll-up").style.display = "block";
+  } else {
+    document.querySelector(".top-scroll-up").style.display = "none";
+  }
+};
+scrollBtn.addEventListener("click", (e) => {
+  document.documentElement.scrollTop = 0;
+});
