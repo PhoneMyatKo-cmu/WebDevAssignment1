@@ -93,6 +93,16 @@
 }  
 }
 
+.personal-details{
+   padding-top: 10px;
+   border-radius: 15px;
+   box-shadow: 0 4px 3px gray;
+   transition: transform 1s, left 0.5s;
+}
+.personal-details:hover{
+transform: scale(1.05);
+}
+
 .personal-details>div, .profile-hide > div{
  
    margin-bottom: 5%;
@@ -157,6 +167,8 @@
 }
 .background{
  max-height: 0;
+ border-radius: 15px;
+ box-shadow: 2px 4px 2px  gray;
  overflow: hidden;
  transition: max-height 2s;
 }
