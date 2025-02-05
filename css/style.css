@@ -10,6 +10,10 @@
     transform: rotate(180deg);
     }
 
+    .row{
+      min-height: auto;
+    }
+
     /* Change font for navbar-brand */
 .navbar-brand{
 
@@ -74,7 +78,8 @@
    color: white;
 } */
 .main > .row{
-   margin: 1% 0;
+   margin: 0 0;
+   padding: 3% 0;
    font-family: monospace;
    
 }
@@ -157,7 +162,7 @@
 }
 
 .background.show{
-   max-height: 1500px;
+   max-height: 2000px;
 }
 .exp > div{
    margin: 2% 0;
@@ -183,6 +188,50 @@
    font-weight:bolder;
    padding: 0 10px;
 }
+
+.skill-top-container{
+
+   margin: 0px 0;
+   padding:10px 0;
+}
+
+.show-skill-btn > button{
+   width: 100%;
+}
+
+.console{
+   margin-top: 5px;
+   background-color: rgb(49, 46, 46);
+   
+   max-height: 0;
+   overflow: hidden;
+   color: white;
+   
+}
+.console.show{
+   max-height: 60px;
+padding: 10px 3px;
+}
+.console>span:nth-of-type(1){
+   color: rgb(1, 186, 1);
+}
+
+.skillset{
+   max-height: 0;
+   color: white;
+   background-color: rgb(49, 46, 46);
+   overflow: hidden;
+   margin-bottom: 0;
+   padding: 0 3%;
+   
+}
+
+.skillset-0.show,.skillset-1.show,.skillset-2.show,.skillset-3.show{
+   max-height: 80px;
+   /* margin-bottom: 20px; */
+}
+
+
 
 .prize > div {
    margin: 2% 0;

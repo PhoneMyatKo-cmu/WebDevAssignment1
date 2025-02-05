@@ -88,3 +88,78 @@ seeLessBtn.addEventListener("click", (e) => {
   seeLessBtn.style.display = "none";
   seeMoreBtn.parentElement.style.display = "block";
 });
+
+// Skill Typing
+let toggleJava = false;
+let togglePython = false;
+let toggleJS = false;
+let toggleSql = false;
+const toggles = [toggleJava, togglePython, toggleJS, toggleSql];
+
+const javaBtn = document.querySelector(".java-btn");
+const pythonBtn = document.querySelector(".python-btn");
+const jsBtn = document.querySelector(".js-btn");
+const sqlBtn = document.querySelector(".sql-btn");
+const btns = [javaBtn, pythonBtn, jsBtn, sqlBtn];
+
+let typedJava;
+let typedPython;
+let typedJs;
+let typedSql;
+const types = [typedJava, typedPython, typedJs, typedSql];
+
+let javaString = "<i> System.out.println(javaSkill());</i>";
+let pythonString = "<i> print(show_python_skill()) </i>";
+let jsString = "<i> console.log(showJsSkill()); </i>";
+let sqlString = "<i> select sql_skill from skills; </i>";
+const stringArray = [javaString, pythonString, jsString, sqlString];
+
+btns.forEach((e, i) => {
+  e.addEventListener("click", (event) => {
+    if (!toggles[i]) {
+      document.querySelector(".console-" + i).classList.toggle("show");
+      if (!types[i]) {
+        types[i] = new Typed("#element-" + i, {
+          strings: [stringArray[i]],
+          typeSpeed: 20,
+          cursorChar: "█",
+          loop: false,
+          onComplete: (self) => {
+            document.querySelector(".skillset-" + i).classList.toggle("show");
+          },
+        });
+      } else {
+        document.querySelector(".skillset-" + i).classList.toggle("show");
+      }
+      toggles[i] = !toggles[i];
+    } else {
+      document.querySelector(".console-" + i).classList.toggle("show");
+      document.querySelector(".skillset-" + i).classList.toggle("show");
+      toggles[i] = !toggles[i];
+    }
+  });
+});
+
+// javaBtn.addEventListener("click", (e) => {
+// if (!toggleJava) {
+// document.querySelector(".java-console").classList.toggle("show");
+//document.querySelector("#element").innerHTML = "";
+// if (!typedJava) {
+// typedJava = new Typed("#elementJava", {
+// strings: [],
+// typeSpeed: 20,
+// cursorChar: "█",
+// loop: false,
+// onComplete: (self) => {
+// document.querySelector(".skillset").classList.add("show");
+// console.log("Oncomplete Called in java");
+// },
+// });
+// }
+// toggleJava = !toggleJava;
+// } else {
+// document.querySelector(".java-console").classList.toggle("show");
+// document.querySelector("#java").classList.toggle("show");
+// toggle = !toggle;
+// }
+// });
