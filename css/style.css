@@ -285,6 +285,8 @@ div {
 /* } */
 .top-portfolio {
   opacity: 1;
+  background: linear-gradient(135deg, #d6d6d6, #f0f0f0, #b8b8b8);
+  padding: 20px;
   transform: translateY(0px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
@@ -323,6 +325,7 @@ div {
   font-size: 1.2rem;
   font-weight: 500;
   margin-top: 10px;
+  font-family: monospace;
 }
 
 .carousel-item img {
@@ -364,6 +367,7 @@ div {
 /* } */
 
 .carousel-overlay {
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -386,22 +390,67 @@ div {
     /* Much lighter on hover */ rgba(0, 0, 0, 0.3) /* Light at the bottom */
   );
 }
-/* .carousel-inner:hover .carousel-caption-1 > h5 { */
-/* color: black !important; */
-/* } */
-/* .carousel-inner:hover .carousel-caption-1 > p { */
-/* color: black !important; */
-/* } */
-/* .carousel-inner:hover .carousel-caption-2 > h5 { */
-/* color: black !important; */
-/* } */
+
 .carousel-item {
-  background-attachment: fixed;
-  background-size: cover;
+  /* background-attachment: ; */
+  /* background-size: cover; */
+}
+
+.github-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.github-overlay a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  position: relative;
+  z-index: 1000;
+}
+
+.github-overlay a:hover {
+  color: #f0db4f; /* Accent color */
+  z-index: 1000;
+}
+
+.github-overlay .a span {
+  font-size: 8px;
+  color: #ea1c1c;
+  margin-top: 1px;
+}
+
+.carousel-inner:hover .github-overlay {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.carousel-inner {
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .footer {
   padding: 15px;
+  background-color: #020d20;
+  color: #ffffff;
 }
 .footer-note {
   text-align: center;
@@ -430,7 +479,7 @@ div {
   .personal-details-absolute {
     position: relative;
     left: 35%;
-    transition: left 0.5s;
+    transition: transform 1s, left 0.5s;
   }
   .carousel-caption {
     width: 20%;
