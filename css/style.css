@@ -1,6 +1,57 @@
 /* To make columns collapsing smoothly */
 body {
   background-color: rgb(216, 216, 216);
+ /* To make columns collapsing smoothly */
+ div{
+   transition: all 0.3s;
+ }
+
+ @keyframes blink {
+   from{opacity: 20%;}
+   to{opacity: 80%;}
+   
+ }
+.top-scroll-up{
+   display: none;
+}
+ .scroll-up{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   right: 0;
+   top: 50%;
+   background-color: black;
+   padding: 3px;
+   color:white;
+   opacity: 20%;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   animation-name: blink;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   
+ }
+
+
+ .scroll-up:hover{
+   padding: 6px;
+   background-color: white;
+   color: black;
+   opacity: 100%;
+ }
+ .button-animate{
+    transition: transform 2s;
+ }
+
+ .button-animate:hover{
+    transform: rotate(180deg);
+    }
+
+    /* Change font for navbar-brand */
+.navbar-brand{
+
 }
 div {
   transition: all 0.3s;
@@ -487,4 +538,23 @@ div {
   .carousel-item.width .carousel-caption {
     width: 40%;
   }
+}
+@media screen and (max-width:992px) 
+{
+ .scroll-up{
+      top: 95%;
+      }  
+}
+@media  screen and (max-width:576px) {
+   .social-links{
+      margin-top: 25px;
+      justify-content: start;
+   }
+
+   .profile-img>img{
+      width: 100% ;
+      border-radius:0% ;
+   }
+   
+   
 }
