@@ -9,6 +9,11 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Ga+Maamli&family=Hepta+Slab:wght@1..900&family=Jaro:opsz@6..72&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Stick+No+Bills:wght@200&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -344,7 +349,7 @@
             </div>
         </div>
         <hr>
-        <div class="row top-portfolio">
+        <div class="container-fluid top-portfolio">
             <h2 class="portfolio-heading">Portfolio Projects</h2>
             <div class="container portfolio" id="portfolio">
                 <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
@@ -355,21 +360,46 @@
                             aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
                     </div>
 
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/p1.jpg" class="d-block w-75 mx-auto" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Image Processing App</h5>
-                                <p>Image Processing App written in JavaFx.</p>
+                        <div class="carousel-item active width"
+                            data-description="This is a web-based application designed to manage business activities of restaurants with easy to ues interface.">
+                            <img src="images/db-project.png" class="d-block w-75 mx-auto" alt="...">
+                            <div class="carousel-overlay"></div>
+                            <div class="carousel-caption d-none d-md-block carousel-caption-1">
+                                <h5>Restaurant Management System</h5>
+                                <p>written in HTML/CSS/JS and Django</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="images/p2.jpg" class="d-block w-75 mx-auto" alt="...">
+                        <div class="carousel-item"
+                            data-description="This is a desktop-based application designed to crop images with intuitive interface.">
+                            <img src="images/crop-project.png" class="d-block img-thumbnail w-75 mx-auto" alt="...">
+                            <div class="carousel-overlay"></div>
+                            <div class="carousel-caption d-none d-md-block carousel-caption-2">
+                                <h5>Image Cropper </h5>
+                                <p>written in JavaFx</p>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="images/p3.jpg" class="d-block w-75 mx-auto" alt="...">
+                        <div class="carousel-item"
+                            data-description="This is a desktop-based application designed to detect edges of images with different algorithms provided.">
+                            <img src="images/edge-project.png" class="d-block w-75 mx-auto" alt="...">
+                            <div class="carousel-overlay"></div>
+                            <div class="carousel-caption d-none d-md-block carousel-caption-3">
+                                <h5>Image Edge Detector</h5>
+                                <p>written in JavaFx</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item"
+                            data-description="This is The Desktop-Based Asteroid Game , a modern reimplementation of the classic arcade game Asteroids.">
+                            <img src="images/asteroid-project.png" class="d-block w-75 mx-auto" alt="...">
+                            <div class="carousel-overlay"></div>
+                            <div class="carousel-caption d-none d-md-block carousel-caption-4">
+                                <h5>Asteroid Game</h5>
+                                <p>written in JavaFx</p>
+                            </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -383,6 +413,10 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+                <p class="carousel-description">
+                    This is a web-based application designed to manage business activities of restaurants with easy to
+                    ues interface.
+                </p>
             </div>
         </div>
     </div>
