@@ -1,57 +1,61 @@
 /* To make columns collapsing smoothly */
 body {
   background-color: rgb(216, 216, 216);
- /* To make columns collapsing smoothly */
- div{
-   transition: all 0.3s;
- }
-
- @keyframes blink {
-   from{opacity: 20%;}
-   to{opacity: 80%;}
-   
- }
-.top-scroll-up{
-   display: none;
+  /* To make columns collapsing smoothly */
 }
- .scroll-up{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: fixed;
-   right: 0;
-   top: 50%;
-   background-color: black;
-   padding: 3px;
-   color:white;
-   opacity: 20%;
-   border-radius: 50%;
-   width: 30px;
-   height: 30px;
-   animation-name: blink;
-   animation-duration: 2s;
-   animation-iteration-count: infinite;
-   
- }
+div {
+  transition: all 0.3s;
+}
 
+@keyframes blink {
+  from {
+    opacity: 20%;
+  }
+  to {
+    opacity: 80%;
+  }
+}
+.top-scroll-up {
+  display: none;
+  z-index: 9999;
+  /* pointer-events: auto; */
+}
+.scroll-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  background-color: black;
+  padding: 3px;
+  color: white;
+  opacity: 20%;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  z-index: 9999;
+}
 
- .scroll-up:hover{
-   padding: 6px;
-   background-color: white;
-   color: black;
-   opacity: 100%;
- }
- .button-animate{
-    transition: transform 2s;
- }
+.scroll-up:hover {
+  padding: 6px;
+  background-color: white;
+  color: black;
+  opacity: 100%;
+}
+.button-animate {
+  transition: transform 2s;
+}
 
- .button-animate:hover{
-    transform: rotate(180deg);
-    }
+.button-animate:hover {
+  transform: rotate(180deg);
+}
 
-    /* Change font for navbar-brand */
-.navbar-brand{
-
+/* Change font for navbar-brand */
+.navbar-brand {
 }
 div {
   transition: all 0.3s;
@@ -252,6 +256,21 @@ div {
   padding: 0 10px;
 }
 
+.soft {
+  margin: 20px 0;
+}
+
+.soft > div {
+  margin: 2% 0;
+}
+.bg-success {
+  background-color: #0fdf3f !important;
+}
+.soft-desp {
+  display: flex;
+  justify-content: space-between;
+}
+
 .skill-top-container {
   margin: 0px 0;
   padding: 10px 0;
@@ -299,7 +318,21 @@ div {
   max-height: 80px;
   /* margin-bottom: 20px; */
 }
-
+.hobby {
+  padding: 30px 0;
+}
+.hobby-desp {
+  padding: 20px 0;
+  line-height: 1.5;
+}
+.hobby-tags {
+  display: flex;
+  justify-content: space-around;
+}
+.hobby-tags > .tag {
+  border: 1px solid black;
+  padding: 1px 5px;
+}
 .prize > div {
   margin: 2% 0;
 }
@@ -539,22 +572,19 @@ div {
     width: 40%;
   }
 }
-@media screen and (max-width:992px) 
-{
- .scroll-up{
-      top: 95%;
-      }  
+@media screen and (max-width: 992px) {
+  .scroll-up {
+    top: 95%;
+  }
 }
-@media  screen and (max-width:576px) {
-   .social-links{
-      margin-top: 25px;
-      justify-content: start;
-   }
+@media screen and (max-width: 576px) {
+  .social-links {
+    margin-top: 25px;
+    justify-content: start;
+  }
 
-   .profile-img>img{
-      width: 100% ;
-      border-radius:0% ;
-   }
-   
-   
+  .profile-img > img {
+    width: 100%;
+    border-radius: 0%;
+  }
 }

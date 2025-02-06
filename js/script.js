@@ -25,10 +25,7 @@ observer.observe(targetElement);
 // Use typed.js for showing my brief introduction section
 
 //intro paragraph
-const introString =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ab aut," +
-  "natus molestias et asperiores quidem autem quisquam culpa modi amet optio dolorem quis omnis alias" +
-  "sint quasi sit expedita.";
+const introString = `I am a second-year Software Engineering student at CAMT, Chiang Mai University. I enjoy solving problems, building efficient systems, and continuously expanding my knowledge. I am eager to apply my skills in real-world projects and contribute to innovative solutions in the tech industry.`;
 
 // Typing Obj
 let typed = new Typed("#element", {
