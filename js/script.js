@@ -140,7 +140,15 @@ document
   .addEventListener("slid.bs.carousel", function (event) {
     let activeItem = event.relatedTarget;
     let description = activeItem.getAttribute("data-description");
+    document.querySelector(".carousel-description").style.opacity = "0";
     document.querySelector(".carousel-description").innerText = description;
+    document.querySelector(".carousel-description").style.transform =
+      " translateY(-10px)";
+    setTimeout(() => {
+      document.querySelector(".carousel-description").style.transform =
+        "translateY(0)";
+      document.querySelector(".carousel-description").style.opacity = "100%";
+    }, 500);
   });
 // For scroll up btn
 const scrollBtn = document.querySelector(".scroll-up");

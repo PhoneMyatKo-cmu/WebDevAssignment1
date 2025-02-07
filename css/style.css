@@ -155,6 +155,12 @@ div {
   transform: scale(1.05);
 }
 
+.personal-details .name,
+.exp-container {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
 .personal-details > div,
 .profile-hide > div {
   margin-bottom: 5%;
@@ -191,6 +197,15 @@ div {
 
 .profile-row:nth-of-type(3) {
   border-bottom: 2px solid black;
+}
+
+.profile-desp {
+  text-align: justify;
+}
+
+.profile-row,
+.school-info {
+  font-weight: bold;
 }
 
 .see-less-btn {
@@ -230,6 +245,10 @@ div {
 .exp-container {
   display: flex;
   justify-content: space-between;
+}
+
+.exp-date {
+  text-align: right;
 }
 .school:hover {
   /* background-color: #2c3e50 ;
@@ -319,7 +338,8 @@ div {
   /* margin-bottom: 20px; */
 }
 .hobby {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .hobby-desp {
   padding: 20px 0;
@@ -379,6 +399,9 @@ div {
   opacity: 0;
   transform: translateY(30px);
 }
+.portfolio {
+  position: relative;
+}
 
 .portfolio-heading {
   margin: 0 0 2rem 0;
@@ -410,6 +433,8 @@ div {
   font-weight: 500;
   margin-top: 10px;
   font-family: monospace;
+
+  transition: all 0.5s;
 }
 
 .carousel-item img {
@@ -506,7 +531,7 @@ div {
 }
 
 .github-overlay .a span {
-  font-size: 8px;
+  font-size: 0.5em;
   color: #ea1c1c;
   margin-top: 1px;
 }
