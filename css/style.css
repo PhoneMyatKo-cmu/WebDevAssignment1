@@ -74,7 +74,14 @@ div {
 
 /* Change font for navbar-brand */
 .navbar-brand {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
 }
+.navbar a {
+  font-family: monospace;
+}
+
 .nav-item {
   transition: 0.5s;
 }
